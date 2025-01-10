@@ -97,7 +97,7 @@
     font-size: 60px;
     font-weight: 900;
     color: #23357f;
-    
+
 
 }
 
@@ -174,7 +174,7 @@
     gap: 10px;
 }
 
-.banner-right-text-items p{
+.banner-right-text-items p {
     white-space: nowrap;
 }
 
@@ -299,7 +299,7 @@
 
 
 
-.about-part-right span{
+.about-part-right span {
     height: 10px;
     background: red;
     width: 80px;
@@ -344,7 +344,7 @@
 
 .banner-roll-items {
     display: flex;
-     height: 350px;
+    height: 350px;
     align-items: center;
     justify-content: space-around;
 }
@@ -461,7 +461,13 @@
     width: fit-content;
 }
 
-.service-advantaqges-banner {
+/* service-part */
+/* service-part */
+
+/* service-advantaqges-banner */
+/* service-advantaqges-banner */
+
+.advantaqges-banner {
     width: 100%;
     background: url(../image/service-advantages-banner.jpg);
     height: 690px;
@@ -469,10 +475,11 @@
     background-attachment: fixed;
 }
 
-.service-advantages {
+.advantages {
     height: 690px;
     width: 100%;
     display: flex;
+    align-items: center;
 }
 
 .advantages-left {
@@ -483,18 +490,75 @@
 .advantages-right {
     height: 100%;
     width: 50%;
-    background-color: rgb(76, 76, 204);
+    background-color: rgba(76, 76, 204, 0.918);
+}
+
+.advantages-list {
+    margin-top: 20px;
+    columns: 2;
+    /* gap: 20px; */
+
+}
+
+.advantages-list li {
+    padding: 20px;
+    justify-items: center;
+}
+
+.advantage-heading {
+    text-align: center;
+    margin-top: 70px;
 }
 
 
-.dentist-info{
+.advantage-text {
+    text-align: center;
+    margin-top: 7px;
+}
+
+
+
+/* service-advantaqges-banner */
+/* service-advantaqges-banner */
+
+/* dentist info */
+/* dentist info */
+
+.dentist-info {
     width: 100%;
-    height: 500px;
-    background-color: turquoise;
+    height: 700px;
+    background-color: rgba(28, 193, 152, 1);
+    justify-content: center;
 }
 
-/* service-part */
-/* service-part */
+.dentist-info-items {}
+
+.dentist-info-box {
+    display: flex;
+    width: 780px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.dentist-info-box-right {
+    background-color: white;
+    width: 100%;
+    height: 349.99px;
+
+}
+
+.dentist-info-heading {
+    font-family: Lato;
+    font-size: 45px;
+    font-weight: 900;
+    /* justify-content: center;
+    display: flex; */
+    text-align: center;
+
+}
+
+/* dentist info */
+/* dentist info */
 
 /* pricing-part */
 /* pricing-part */
@@ -526,16 +590,41 @@
 .pricing-items {
     display: flex;
     justify-content: space-between;
+    width: 85%;
+    align-items: center;
+
 }
 
-.pricing-card {
+.pricing-card-left {
     width: 300px;
     border-radius: 15px;
     background: white;
     overflow: hidden;
     text-align: center;
     padding-bottom: 30px;
+    height: 565px;
 }
+
+.pricing-card-middle {
+    width: 300px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 30px;
+    height: 622px;
+}
+
+.pricing-card-right {
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 30px;
+    height: 565px;
+}
+
 
 .pricing-image {
     width: 100%;
@@ -610,14 +699,125 @@
 /* apointment-part */
 /* apointment-part */
 
+.appointment-part {
+    width: 100%;
+    height: 649.99px;
+    background-color: #23357f;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.appointment-part-items {
+    display: flex;
+}
+
+.book-appointment {
+    width: 50%;
+    padding: 50px 0;
+}
+
+.book-appointment h1 {
+    color: white;
+}
+
+.input-items input {
+    width: 300px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.Gender-box {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border-radius: 10px;
+}
+
+.text-area {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.appointment-image {
+    width: 50%;
+    position: relative;
+}
+
+.apointment-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.226);
+    position: absolute;
+}
+
 /* apointment-part */
 /* apointment-part */
 
 /* FAQ-part */
 /* FAQ-part */
 
+.faq-items {
+    /* height: 750px; */
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-top {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.faq-top h1 {
+    color: #23357f;
+}
+
+
+.faq-bottom {
+    columns: 2;
+    column-gap: 30px;
+}
+
+.faq-bottom li {
+    /* margin: 50px 0; */
+    margin-bottom: 50px;
+    display: flex;
+    gap: 7px;
+}
+
+
+.faq-bottom li i {
+    margin: 3px 0;
+}
+
 /* FAQ-part */
 /* FAQ-part */
+
+/* welcome part */
+/* welcome part */
+
+.welcome-items{
+    width: 100%;
+    height: 300px;
+    background: url(../image/welcome-image.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 80px 0;
+
+}
+
+/* welcome part */
+/* welcome part */
 
 /* location-part */
 /* location-part */
