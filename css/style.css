@@ -705,6 +705,7 @@
     background-color: #23357f;
     margin-top: 20px;
     margin-bottom: 100px;
+    position: relative;
 }
 
 .appointment-part-items {
@@ -744,16 +745,16 @@
     display: block;
     border-radius: 10px;
     box-sizing: border-box;
+
 }
 
 .appointment-image {
     width: 50%;
-    position: relative;
 }
 
-.apointment-overlay{
+.apointment-overlay {
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-color: rgba(0, 0, 0, 0.226);
     position: absolute;
 }
@@ -806,13 +807,66 @@
 /* welcome part */
 /* welcome part */
 
-.welcome-items{
+
+.welcome-part {
+    display: flex;
+    margin: 80px 0;
+    position: relative;
+}
+
+.welcome-items {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background: url(../image/welcome-image.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    margin: 80px 0;
+
+}
+
+.welcome-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+/* .welcome-text h1{
+    font-weight: 900;
+    font-family: Lato;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    width: 70%;
+} */
+
+.welcome-button {
+    /* margin-top: 30px; */
+    padding: 10px 25px;
+    border-radius: 25px;
+    background: rgba(28, 193, 152, 1);
+    color: white;
+    font-size: 18px;
+    border: none;
+    width: fit-content;
+
+}
+
+.welcome-image-overlay {
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.342);
+    position: absolute;
+    z-index: -;
+}
+
+
+
+
+.welcome-box {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
 
 }
 
@@ -822,11 +876,83 @@
 /* location-part */
 /* location-part */
 
+.loction-part {
+    width: 100%;
+    height: 650px;
+    background-color: #23357f;
+    display: flex;
+}
+
+.loction-items {
+    width: 100%;
+    display: flex;
+    /* background-color: yellowgreen; */
+    margin-top: 150px;
+
+}
+
+.location-part-text {
+    width: 50%;
+    color: white;
+}
+
+.location-part-map {
+    width: 50%;
+}
+
+.location-part-text-body {
+    margin-bottom: 30px;
+}
+
+.location-part-text-list {
+    columns: 2;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.location-part-text-list li {
+
+    margin-bottom: 10px;
+}
+
 /* location-part */
 /* location-part */
 
 /* footer-part */
 /* footer-part */
+
+.footer-part {
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-top {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-bottom-bottom-bacground {
+    /* height: 70px; */
+    width: 100%;
+    background-color: rgb(103, 103, 231);
+}
+
+.footer-bottom-text {
+    display: inline-block;
+}
 
 /* footer-part */
 /* footer-part */
